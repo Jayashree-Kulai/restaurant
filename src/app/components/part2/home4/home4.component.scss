@@ -1,0 +1,62 @@
+.container-fluid{
+    min-height: 780px;
+    position: relative;
+    font-family: "Open Sans";
+
+    .dish{
+        position: absolute;
+        bottom: 0;
+        left:3%;
+        z-index: -1;
+    }
+
+    .bread{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .middleContent{
+        padding-top: 5%;
+
+        .howtoorder{
+            margin-left: -2px;
+            color: #4C4C4C;
+            font-size: 50px;
+            letter-spacing: 0;
+            line-height: 83px;
+            text-shadow: 0 0 9px 0 #FFFFFF;
+        }
+
+        .info{
+            color: #929598;
+            font-size: 18px;
+            letter-spacing: 0.58px;
+            line-height: 24px;
+        }
+
+        .dishImage{
+            margin-top: 10%;
+
+            .image{
+                float: left; 
+                margin-right: 1.75rem;
+                padding-bottom: 10%; 
+            
+                .text{
+                    height: 54px;
+                    width: 242px;
+                    color: #7C7C7C;
+                    font-size: 18px;
+                    letter-spacing: 0.64px;
+                    line-height: 27px;
+                    padding-left: 6%;
+                }
+            }
+        }
+
+        .textline{
+            margin-top: 10%;
+        }
+    }
+}

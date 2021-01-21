@@ -25,6 +25,9 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { ReviewRatingComponent } from './components/review-rating/review-rating.component';
 import { HomeComponent } from './components/part2/home/home.component';
 import { PopularBrandsComponent } from './components/part2/popular-brands/popular-brands.component';
+import { Home3Component } from './components/part2/home3/home3.component';
+import { Home4Component } from './components/part2/home4/home4.component';
+import { Home5Component } from './components/part2/home5/home5.component';
 
 
 @NgModule({
@@ -42,7 +45,10 @@ import { PopularBrandsComponent } from './components/part2/popular-brands/popula
     GalleryComponent,
     ReviewRatingComponent,
     HomeComponent,
-    PopularBrandsComponent
+    PopularBrandsComponent,
+    Home3Component,
+    Home4Component,
+    Home5Component
   ],
   imports: [
     BrowserModule,

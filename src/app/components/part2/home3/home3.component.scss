@@ -1,0 +1,198 @@
+.container-fluid{
+    padding: 0;
+    position: relative;
+    min-height: 823px;
+    background: linear-gradient(178.89deg, #FFFFFF 0%, #F4F6FF 100%);
+
+    .gradimage{
+        position: absolute;
+        bottom: 0;
+    }
+
+    .plateImage{
+        position: absolute;
+        bottom: 0;
+    }
+
+    .maincontent{
+        padding-top: 15%;
+       
+        .bestDeal{
+            margin-left: -2px;
+            color: #4C4C4C;
+            font-family: "Open Sans";
+            font-size: 50px;
+            letter-spacing: 0;
+            text-shadow: 0 0 9px 0 #FFFFFF;
+        }
+
+        .endlessDeal{
+            color: #4C4C4C;
+            font-family: "Open Sans";
+            font-size: 18px;
+            letter-spacing: 0.58px;
+        }
+
+        .main{
+            padding: 0;
+        
+            .left{
+                background-image:url("../../../../assets/home3/image.jpg");
+                border-radius: 0.5rem;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                object-fit: cover;
+
+                span{
+                    height: 96px;
+                    width: 201px;
+                    font-family: "Open Sans";
+                    font-size: 33px;
+                    font-weight: bold;
+                    letter-spacing: 0;
+                    line-height: 48px;
+                    
+                }
+                .everyday{
+                    color:white
+                }
+
+                .waw{
+                    color:white;
+                    font-weight: 30px;
+                }
+
+                .rectangle{
+                    margin-top: 5%;
+                    margin-bottom: 6%;
+                    box-sizing: border-box;
+                    text-align: center;
+                    height: 41.42px;
+                    width: 126px;
+                    border: 1px solid rgba(255,255,255,0.4);
+                    border-radius: 3px;
+                    background-color: rgba(255,255,255,0.07);
+
+                    .bsr{
+                        padding: 4%;
+                        margin: auto;
+                        height: 28px;
+                        width: 97px;
+                        color: #FFFFFF;
+                        font-family: "Open Sans";
+                        font-size: 21px;
+                        font-weight: 600;
+                        letter-spacing: 3.27px;
+                        line-height: 28px;
+                    }
+                }
+                .viewdetails{
+                    height: 22px;
+                    color: #FFFFFF;
+                    font-family: "Open Sans";
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 65px;
+                }
+            }
+            .right{
+                background-image:url("../../../../assets/home3/bg.png");
+                border-radius: 0.5rem;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                object-fit: cover;
+
+                span{
+                    height: 96px;
+                    width: 201px;
+                    font-family: "Open Sans";
+                    font-size: 33px;
+                    font-weight: bold;
+                    letter-spacing: 0;
+                    line-height: 48px;
+                }
+                .everyday{
+                    color: #FFE848;
+                }
+                .waw{
+                    color:white
+                }
+                .info{
+                    color: #FFFFFF;
+                    font-family: "Open Sans";
+                    font-size: 16px;
+                    font-weight: 600;
+                    letter-spacing: 0;
+                    line-height: 40px;
+                }
+                .rectangle{
+                    box-sizing: border-box;
+                    text-align: center;
+                    height: 41.42px;
+                    width: 126px;
+                    border: 1px solid rgba(255,255,255,0.4);
+                    border-radius: 3px;
+                    background-color: rgba(255,255,255,0.07);
+
+                    .bsr{
+                        padding: 4%;
+                        margin: auto;
+                        height: 28px;
+                        width: 97px;
+                        color: #FFFFFF;
+                        font-family: "Open Sans";
+                        font-size: 21px;
+                        font-weight: 600;
+                        letter-spacing: 3.27px;
+                        line-height: 28px;
+                    }
+                }
+                .viewdetails{
+                    height: 22px;
+                    color: #FFFFFF;
+                    font-family: "Open Sans";
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 65px;
+                }
+
+            }
+        }
+        .naming{
+            margin-top: 1rem;
+            
+                p{
+                    padding: 1%;
+                    color:#F67E03;
+                    font-family: "Open Sans";
+                    font-size: 22px;
+                    font-weight: 900;
+                    line-height: 36px;
+                }
+    
+                .pager{
+                    
+                    a{
+                        display: inline-block;
+                        height: 57px;
+                        width: 56px;
+                        //width: 66px;
+                        font-size: 35px;
+                        height: 40px;
+                        padding-right: 5%;
+                        border-radius: 6px;
+                        background-color: white;
+                        color: black;
+                        box-shadow: 1px 2px 11px 0 rgba(198,188,188,0.17);
+    
+                        .previous{
+                            margin-left: 1%;
+                        }
+                    }
+                    
+                }
+        }
+    }
+}

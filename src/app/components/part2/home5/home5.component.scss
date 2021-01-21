@@ -1,0 +1,86 @@
+.container-fluid{
+    position: relative;
+    font-family: "Open Sans";
+    padding: 0;
+    min-height: 847px;
+    background: linear-gradient(206.72deg, #F3F6FF 0%, #FFFFFF 100%);
+
+    .pizza{
+        position: absolute;
+        bottom: 0;
+        //z-index: -1;
+    }
+
+    .logogradient{
+        position: absolute;
+        top: 0;
+        right: 0;
+        //z-index: -1;
+    }
+    .container{
+        .iphone{
+            position: absolute;
+            top: 2%;
+            right: 22%;
+            //z-index: -1;
+        }
+        .main{
+            padding-top: 8%;
+            position: relative;
+            z-index: 1;
+        
+            .lorem{
+                height: 83px;
+                color: #4C4C4C;
+                font-size: 50px;
+                letter-spacing: 0;
+                line-height: 83px;
+                text-shadow: 0 0 9px 0 #FFFFFF;
+            }
+            .download{
+                height: 41px;
+                width: 347px;
+                color: #303134;
+                font-size: 30px;
+                font-weight: 600;
+                letter-spacing: 0;
+                line-height: 41px;
+            }
+            p{
+                margin-top: 2%;
+                height: 44px;
+                width: 349px;
+                color: #7C7C7C;
+                font-size: 16px;
+                letter-spacing: 0;
+                line-height: 22px;
+            }
+            .appImage{
+                padding-left: 1.5%;
+                margin-top: 3%;
+
+                img{
+                float: left; 
+                margin-right: 0.75rem; 
+                }
+            }
+        }
+    }
+}
+// @media only screen and (min-width: 360px) and (max-width: 479px)   {
+//      /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    
+//      .logogradient{
+//         position: relative;
+//      }
+    
+    
+//     }
+    @media only screen and (max-device-width: 480px) {
+        .logogradient{
+            position: relative;
+         }
+         .main{
+             background-color: red;
+         }
+    }
