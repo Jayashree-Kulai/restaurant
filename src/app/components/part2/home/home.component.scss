@@ -2,13 +2,23 @@
 @import '../../../../../src/styles-variables.scss';
 
 .container-fluid {
-    background-image: url("../../../../assets/BG1.jpeg");
-    background-size: cover;
-    z-index: -1;
-    background-position: center center;
-    background-repeat: no-repeat;
-    object-fit: cover;
     font-family: "Open Sans";
+    min-height: 935px;
+
+  .mashroom{
+      position: absolute;
+      left: 0;
+      top:9rem;
+      z-index: -1;
+  }
+
+  .plateImage{
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+  }
+
     .container {
       .order-your-food-from{
         margin-bottom: 4rem;
@@ -47,7 +57,7 @@
       .row2{
         width:63%;
         padding:0;
-        padding-bottom: 17rem;
+        padding-bottom: 1rem;
         margin-left: 0px;
         
         div{
@@ -119,7 +129,7 @@
 
   }
 
-  @media only screen and (max-device-width: 480px) {
+  @media only screen and (max-device-width: 360px) {
 
     #myUL{
          li{
@@ -127,5 +137,8 @@
           margin-right: 0px; 
            width: 220px;
          }
+     }
+     .input-group{
+       width: 100%;
      }
 }
