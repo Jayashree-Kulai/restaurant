@@ -50,10 +50,14 @@
         .cart{
             p{
                 float: left;
+                margin-right: 10px;
             }
             .thb-product-numbers{
+                
+                border-radius: 3px;
                 display:block;
-                background:white;
+                border: 3px solid white;
+                background:rgb(241, 148, 71);
                 width:27px;
                 height:27px;
                 text-align:center;
@@ -63,12 +67,14 @@
                 font-family:Helvetica;
               }
               .thb-product-numbers:after{
+                font-family: 'Open Sans';
                 display:block;
                 content:" ";
                 height:10px;
+                color: white;
                 border:3px solid white;
                 position:absolute;
-                top:-6px;
+                top:-10px;
                 left:5px;
                 right:5px;
                 border-radius:5px;
@@ -76,7 +82,7 @@
               }
             .cart-text{
                 color: white;
-                font-size: 12px;
+                font-size: 14px;
                 letter-spacing: 0;
                 margin-top: 18%;
                 margin-left: 6%;
