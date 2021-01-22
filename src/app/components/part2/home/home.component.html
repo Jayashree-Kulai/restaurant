@@ -13,21 +13,28 @@
                             <path
                                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                         </svg></span>
-                    <input class="form-control search-text-box" type="text"
-                        placeholder="Search your restaurant or cuisines" aria-label="Search">
-                </div>
+                    <input class="form-control search-text-box" id="search1" type="text"
+                        placeholder="Search your restaurant or cuisines" aria-label="Search" (keyup)="onSearchOfFood()">
+                        <span *ngIf = "count" class="input-group-text pin-icon" style="background-color: white; border: none;">
+                            <i class="fas fa-times" aria-hidden="true"></i> 
+                        </span>
+                    </div>
             </form>
         </div>
 
         <div class="row row2">
 
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <form>
-                    <div class="input-group">
+                    <div class="input-group" style="border-radius: 10px;" (keyup)="myFunction()"
+                        (click)="displayList()">
                         <span class="input-group-text pin-icon">
                             <i class="fa fa-map-pin" aria-hidden="true"></i>
                         </span>
-                        <input class="form-control search-box" type="text" placeholder="Location" aria-label="Search">
+                        <input id="myInput" class="form-control search-box" type="text" placeholder="Location"
+                            aria-label="Search" value="{{inputLocation}}">
+
+  
                         <span class="input-group-text gps-icon">
                             <img src="../../../assets/icn_gps_indicator.jpeg">
                         </span>
@@ -35,16 +42,33 @@
                 </form>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <form>
-                    <div class="input-group">
-                        <input class="form-control search-box" type="text" placeholder="Location" aria-label="Search">
+                    <div class="input-group" style="border-radius: 10px;">
+                        <input class="form-control search-box" type="text" placeholder="Date" aria-label="Search"  value = "Today, {{today | date}}">
                         <span class="input-group-text now-icon">
-                            <img src="../../../../assets/now-btn-edited.jpeg">
+                            <img src="../../../../assets/now-btn-edited.jpeg" style="border-radius: 10px;">
                         </span>
                     </div>
                 </form>
             </div>
+            <div class="row dropdownLocation">
+                <ul class="row" id="myUL" *ngIf="display">
+                    <li class="row" (click)="selectLocation('Adele')"><a>Adele</a></li>
+                    
+                    <li class="row" (click)="selectLocation('Agnes')"><a>Agnes</a></li>
+                    
+                    <li class="row" (click)="selectLocation('Billy')"><a>Billy</a></li>
+                    
+                    <li class="row" (click)="selectLocation('Bob')"><a>Bob</a></li>
+                    
+                    <li class="row" (click)="selectLocation('Calvin')"><a>Calvin</a></li>
+                    
+                    <li class="row" (click)="selectLocation('Christina')"><a>Christina</a></li>
+                    
+                    <li class="row" (click)="selectLocation('Cindy')"><a>Cindy</a></li>
+                    
+                </ul>
+            </div>
         </div>
     </div>
-

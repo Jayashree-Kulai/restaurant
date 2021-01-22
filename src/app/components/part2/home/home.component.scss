@@ -24,10 +24,11 @@
         margin-bottom: 2rem;
         form{
           .input-group{
+            border-radius: 10px;
             background-color: #FFFFFF;
             width: 62%;
             box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
-            border-radius: 10px;
+            
             span{
               opacity: 0.6;
               padding: 1rem;
@@ -50,13 +51,15 @@
         margin-left: 0px;
         
         div{
-          background-color: #FFFFFF;
+          
           padding-left: 0;
           margin-bottom: 5px;
           form{
+            background-color: #FFFFFF;
             border-radius: 10px;
             box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
             .input-group{
+              border-radius: 10px;
               input{
                 height: 4rem;             
               }
@@ -68,10 +71,61 @@
                 background-color: #FFFFFF;
               }
             }
+
+            
           }
         }
 
       }
+
+      .dropdownLocation{
+        width: 100%;
+        margin-left: 0.5%;
+        margin-right: 2.5%;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+
+        #myUL {
+          list-style-type: none;
+          margin: 0;
+          color: black;
+          margin-top:20px;
+          display: block;
+
+        }
+        li{
+          width: 570px;
+          padding-bottom: 3%;
+          border-bottom: 1px solid #c4c0c0;
+          padding-top: 3%;
+          margin-left: 10px;
+          margin-right: 10px; 
+
+        }
+        
+        #myUL li a {
+          border: none;
+          margin-top: 1px; /* Prevent double borders */
+
+          padding: 12px;
+          text-decoration: none;
+          font-size: 16px;
+          color: black;
+          display: block
+        }
+      }
     }
 
   }
+
+  @media only screen and (max-device-width: 480px) {
+
+    #myUL{
+         li{
+          margin-left: 0px;
+          margin-right: 0px; 
+           width: 220px;
+         }
+     }
+}
