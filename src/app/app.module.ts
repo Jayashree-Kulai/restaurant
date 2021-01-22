@@ -18,7 +18,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
-
 import { FooterComponent } from './components/footer/footer.component';
 import { ResturantBackgroundComponent } from './components/resturant-background/resturant-background.component';
 import { GalleryComponent } from './components/gallery/gallery.component';

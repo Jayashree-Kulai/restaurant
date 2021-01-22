@@ -19,6 +19,7 @@ export class MenuComponent implements OnInit {
   cart: Cart[];
 
   count: number = 1;
+  cartCount: number = 0;
 
   constructor(private router: Router, private menuService: MenuService) { 
     this.recommendedList = [];
@@ -50,6 +51,7 @@ export class MenuComponent implements OnInit {
 
   getCartItems(): void {
     this.cart = this.menuService.getCartItems();
+    console.log("cartcount...",this.cart.length)
   }
 
   addRecommendedToCart(item : Recommended) : void {
@@ -61,6 +63,7 @@ export class MenuComponent implements OnInit {
       count : 1
      };
     this.cart.unshift(tempItem);
+    console.log("cartcount...",this.cart.length)
   }
 
   addAppetizerToCart(item : Appetizer) : void {
@@ -71,6 +74,7 @@ export class MenuComponent implements OnInit {
       count : 1
      };
     this.cart.unshift(tempItem);
+    console.log("cartcount...",this.cart.length)
   }
 
   addSoupToCart(item : Appetizer) : void {
@@ -81,6 +85,7 @@ export class MenuComponent implements OnInit {
       count : 1
      };
     this.cart.unshift(tempItem);
+    console.log("cartcount...",this.cart.length)
   }
 
   incrementItemCount(item: Cart) : void {
@@ -99,6 +104,7 @@ export class MenuComponent implements OnInit {
         this.cart.splice(index, 1)
       }
     })
+    console.log("cartcount...",this.cart.length)
   }
 
   clearCart() : void {
