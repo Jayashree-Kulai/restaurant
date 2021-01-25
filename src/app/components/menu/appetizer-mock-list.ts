@@ -2,7 +2,7 @@ import { Appetizer } from '../../interface/appetizer'
 
 export const APPETIZERS: Appetizer[] = [
     {
-        title: "Canapes and Crostini",
+        title: "Canapes",
         price: "AED27.00",
         customizable:"Customizable",
         description:"Panko breaded mac and cheese balls fried until golden brown and served with our homemade marinara sauce.",
