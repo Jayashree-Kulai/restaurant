@@ -176,6 +176,18 @@ export class MenuComponent implements OnInit {
 
   clearCart(): void {
     this.cart.splice(0, this.cart.length);
+
+    for (var k = 0; k < this.recommendedList.length; k++) {
+        this.recommendedList[k].addButtonText = "ADD";
+    }
+
+    for (var k = 0; k < this.appetizerList.length; k++) {
+        this.appetizerList[k].addButtonText = "ADD";
+    }
+
+    for (var k = 0; k < this.soupList.length; k++) {
+        this.soupList[k].addButtonText = "ADD";
+    }
   }
 
 }
