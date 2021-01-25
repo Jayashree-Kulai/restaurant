@@ -22,10 +22,10 @@
     </div>
 
     <div class="container imgDisplay" *ngIf="display">
-        <div class="cancel">
-            <img class="image" src="../../../assets/cancel.png" alt="cancel" (click)="closeOverlay()">
-        </div>
         <div class="container displayImage">
+            <div class="cancel">
+                <img class="image" src="../../../assets/cancel.png" alt="cancel" (click)="closeOverlay()">
+            </div><br><br>
             <img [src]="image.imageUrl" alt="" class="img-fluid mx-auto d-block">
         </div>
         <div class="row naming">
@@ -33,9 +33,13 @@
                 <p>{{image.name}}</p>
             </div>
             <div class="col text-right">
+
                 <p class="pager">
-                    <a href="#" class="previous" (click)="previous(image.id)">&laquo;</a>
-                    <a href="#" class="next" (click)="next(image.id)">&raquo;</a>
+                    <span class="count">{{image.id}}/{{imageCount}}</span>
+                    <button [disabled]="image.id === 1" class="previous" (click)="previous(image.id)"><i
+                            class="fa fa-angle-left"></i></button>
+                    <button [disabled]="image.id === imageCount" class="next" (click)="next(image.id)"><i
+                            class="fa fa-angle-right"></i></button>
                 </p>
             </div>
         </div>

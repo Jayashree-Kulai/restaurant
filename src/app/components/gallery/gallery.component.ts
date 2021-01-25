@@ -15,6 +15,7 @@ export class GalleryComponent implements OnInit {
   display = false;
   overlay = true;
   num = 12;
+  imageCount = 0;
 
   openOverlay = (id: number) => {
     console.log("id of img is..", id);
@@ -48,11 +49,14 @@ export class GalleryComponent implements OnInit {
   loadImage(id: number): void {
     this.image = this.galleryservice.getImage(id);
     console.log("load img .....", this.image);
+
+    
   }
 
   getAllImages(): void {
     this.imagelist = this.galleryservice.getAllImages();
-
+    this.imageCount = this.imagelist.length;
+    console.log("length of img .....", this.imageCount);
   }
 
   viewMore(): void {

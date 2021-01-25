@@ -3,6 +3,7 @@
 
 .container-fluid{
       box-shadow: $boxShadow;
+      position: relative;
       .container{
                 background-color:$footerBackground;
           
@@ -107,7 +108,7 @@
             }
           
           .second{
-              position: relative;
+             position: relative;
               box-sizing: border-box;
               height: 0.125rem;
               border: 1px solid black;
